@@ -59,15 +59,14 @@ python ./src/env/setup_env.py
 ```bash
 .
 ├── data                   # Images Dataset Directory
-|   ├── train
 |   ├── test
 |   ├── label
-├── docs                   # Documentation files which includes analysis report
-|   ├── face_match         # Scripts for face recognition
+├── face_match_deepface    # Face Recognition python scripts
+├── nb_workspace           # Notebooks workshop
 ├── report                 # Reports files
-|   ├── plots              # Figures files
-|   ├── reports            # Reports HTML files
+|   ├── plots              # Saved figures files
 ├── src                    # Source scripts files
+|   ├── deepface_modified  # Modified Package of deepface.
 |   ├── env                # Script file to create project directory environment
 └── README.md
 ```
@@ -104,7 +103,7 @@ You can explore the cell interactive mode throught the notebook at: nb_worksapce
 The face recognition sript is located at: face_match/face_match.py
 
 ```
-python ./face_match/face_match.py --mode single --img_dir 'data/test/' --img_name '001_5992faf7.jpg' --label_path 'data/label/' 
+python ./face_match_deepface/face_recognition.py --mode video --img_dir data/test --img_video_name Video3_chunk_8.mp4 --label_path data/label
 ```
 
 ## Note
